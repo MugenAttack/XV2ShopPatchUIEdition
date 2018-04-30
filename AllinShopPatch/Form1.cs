@@ -26,37 +26,37 @@ namespace AllinShopPatch
 
         private void applyToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (chklstIDB.GetItemChecked(0))
+            if (chklstIDB.GetItemChecked(0) && File.Exists("data\\system\\item\\costume_top_item.idb"))
                 applytoIDB("data\\system\\item\\costume_top_item.idb");
 
-            if (chklstIDB.GetItemChecked(1))
+            if (chklstIDB.GetItemChecked(1) && File.Exists("data\\system\\item\\costume_bottom_item.idb"))
                 applytoIDB("data\\system\\item\\costume_bottom_item.idb");
 
-            if (chklstIDB.GetItemChecked(1))
+            if (chklstIDB.GetItemChecked(1) && File.Exists("data\\system\\item\\costume_shoes_item.idb"))
                 applytoIDB("data\\system\\item\\costume_shoes_item.idb");
 
-            if (chklstIDB.GetItemChecked(3))
+            if (chklstIDB.GetItemChecked(3) && File.Exists("data\\system\\item\\costume_gloves_item.idb"))
                 applytoIDB("data\\system\\item\\costume_gloves_item.idb");
 
-            if (chklstIDB.GetItemChecked(4))
+            if (chklstIDB.GetItemChecked(4) && File.Exists("data\\system\\item\\accessory_item.idb"))
                 applytoIDB("data\\system\\item\\accessory_item.idb");
 
-            if (chklstIDB.GetItemChecked(5))
+            if (chklstIDB.GetItemChecked(5) && File.Exists("data\\system\\item\\skill_item.idb"))
                 applytoIDB("data\\system\\item\\skill_item.idb");
 
-            if (chklstIDB.GetItemChecked(6))
+            if (chklstIDB.GetItemChecked(6) && File.Exists("data\\system\\item\\talisman_item.idb"))
                 applytoIDB("data\\system\\item\\talisman_item.idb");
 
-            if (chklstIDB.GetItemChecked(7))
+            if (chklstIDB.GetItemChecked(7) && File.Exists("data\\system\\item\\battle_item.idb"))
                 applytoIDB("data\\system\\item\\battle_item.idb");
 
-            if (chklstIDB.GetItemChecked(8))
+            if (chklstIDB.GetItemChecked(8) && File.Exists("data\\system\\item\\material_item.idb"))
                 applytoIDB("data\\system\\item\\material_item.idb");
 
-            if (chklstIDB.GetItemChecked(9))
+            if (chklstIDB.GetItemChecked(9) && File.Exists("data\\system\\TtlList\\TTLItemList.tdb"))
                 modifyTdbS1("data\\system\\TtlList\\TTLItemList.tdb", 8);
 
-            if (chklstIDB.GetItemChecked(10))
+            if (chklstIDB.GetItemChecked(10) && File.Exists("data\\system\\TtlList\\TTLItemList.tdb"))
                 modifyTdbS1("data\\system\\TtlList\\TTLItemList.tdb", 16);
 
             MessageBox.Show("Patch has been Applied to Selected Items");
